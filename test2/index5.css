@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.container {
+  position: relative;
+  font-size: clamp(32px, 6vw, 72px);
+  font-weight: bold;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  opacity: 0.15;
+  transform: skewX(-30deg) scaleY(1.2) translate(20px, 35px);
+  filter: blur(4px);
+  animation: shadowMove 4s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+.text {
+  position: relative;
+  color: #ff7070;
+  z-index: 1;
+}
+
+/* انیمیشن سایه */
+@keyframes shadowMove {
+  0% {
+    transform: skewX(-30deg) scaleY(1.2) translate(20px, 35px);
+  }
+  100% {
+    transform: skewX(-20deg) scaleY(1.2) translate(35px, 45px);
+  }
+}

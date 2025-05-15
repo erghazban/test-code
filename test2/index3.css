@@ -1,0 +1,54 @@
+a {
+    text-decoration: none;
+    color: red;
+
+}
+
+a:hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+a:active{
+    color: greenyellow;
+}
+a:visited{
+    color: pink;
+}
+.p1 {
+    text-align: center;color: darkblue;
+    font-size: 30px;
+    font-weight: 650;
+    text-shadow: -10px 20px 3px gold;
+    
+}
+.p2 {direction: rtl;
+    
+    
+}
+.my-first-class{
+    direction: rtl;
+    background-color: #333;
+    color: white;
+    border-right: 5px greenyellow solid;
+    border-left: 5px greenyellow solid;
+    padding: 5px 10px 5px 10px;
+    +
+}
+.my-first-class h1{color: yellow;
+
+}
+#container{
+    width:max-content;
+    margin:auto;
+    background-color: #000;
+
+}
+
+.list-class{direction: rtl;
+    background-color: wheat;
+    border: 4px solid darkblue;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+    ;
+}
